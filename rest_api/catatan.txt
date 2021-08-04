@@ -1,0 +1,22 @@
+pembuatan CRUD aplikasi: 
+	1. buat folder src yang berisi folder models, controllers, routes, configs, middlewares
+		> models berperan sebagai pembuatan table di database
+		> controllers berperan sebagai penyedia service dalam mengakses database
+		> routes berperan sebagai penghubung service yang terdapat di folder controllers dengan method http
+		> configs berperan sebagai configurasi2 yang dapat digunakan ketika dibutuhkan
+		> middlewares berperan sebagai pengecek autentikasi terkait login dan pendaftaran
+	2. buat file index.js dan file2 table di folder models
+	3. buat file db.config.js, currentDateTime.config.js, pagination.config.js, error.config.js, response.config.js
+	4. buat file2 service di folder controllers dan kita pun bisa menggunakan beberapa file yang ada di folder configs
+	5. buat file2 route
+	6. daftarkan file2 route ke file app.js
+
+penambahan autentikasi aplikasi:
+	1. buat model user, controller user, respon login di folder configs file response.config.js, router user
+	2. dan untuk verifikasi buat folder middlewares file authJwt.js
+	3. halang router yang diinginkan dengan middlewares authJwt
+
+------------------------
+> logout
+> website
+> mobile
